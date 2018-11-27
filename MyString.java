@@ -32,7 +32,7 @@ public class MyString implements  CharSequence,Comparable<CharSequence>{
          }
          return data[index];
        }
-       public int compareTo(CharSequence s){
+       public int compareTo(CharSequence s)throws ClassCastException{
          if(s==null){
            throw new NullPointerException();
          }
